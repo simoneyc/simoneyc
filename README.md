@@ -1,4 +1,4 @@
-~Fire ball~
+Fire ball~
 ![](gif/8879cc37ec2942ebae114356c84f2ab7.jpg.75d2621885d0da94428b11f5a1c9ac31.jpg)
 
 <!--
