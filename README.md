@@ -26,7 +26,7 @@ Here are some ideas to get you started:
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=simoneyc&layout=pie&theme=algolia)](https://github.com/simoneyc/github-readme-stats)
 
 <h1 align="center">Hi 👋, I'm YC</h1>
-<h3 align="center">A CSE student from NCHU,Taiwan.</h3>
+<h3 align="center">A CSE student from Taiwan.</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=simoneyc&label=Profile%20views&color=0e75b6&style=flat" alt="simoneyc" /> </p>
 
