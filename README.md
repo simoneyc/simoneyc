@@ -16,7 +16,9 @@ Here are some ideas to get you started:
 <div id="header" align="center">
   <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGZ6dHJjZGdnM3hwYW4za21lajdiMjhueHdhaXB6NmFqMm84cWplciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/DKyjRV7y5AcOswAlBr/giphy.gif" width="300"/>
 </div>
-<h1 align="center">Hi 👋, I'm YC</h1>
+<h1 align="center">Hi 👋, I'm YC
+<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDV6enk2dzZrZGxia2RpMXNyYmkyaTVveHR2MjB6Y2ZoOGM2MjRseSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/t6Kf2qs5fgWiAlOig5/giphy.gif" width="50"/>
+</h1>
 
 <h3 align="center">A CSE student from Taiwan.</h3>
 <p align="left"> <img align="right" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTdweXd4c2loazF2ZjkweXU1YjJ0M2I0djJ3bHl4Z3gzMXBoOW80byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/cL117RnDXqzQmyI5Be/giphy.gif" width="200"/><img src="https://komarev.com/ghpvc/?username=simoneyc&label=Profile%20views&color=0e75b6&style=flat" alt="simoneyc" /> </p>
