@@ -32,7 +32,7 @@ Here are some ideas to get you started:
   <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHBvYXM4ZXZjejdrcHVncXNjczRrbGphbmtuMnYxNWx4dHhjMzVmbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/Y4hGOHtho9VS6jI89U/giphy.gif" width="300"/>
   
   
-</div>
+</div> 
 
 <!--
 <img align="right" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTdweXd4c2loazF2ZjkweXU1YjJ0M2I0djJ3bHl4Z3gzMXBoOW80byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/cL117RnDXqzQmyI5Be/giphy.gif" width="200"/>
