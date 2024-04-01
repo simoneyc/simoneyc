@@ -56,7 +56,7 @@ Here are some ideas to get you started:
   <a href="https://pytorch.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="40" height="40"/> </a> 
   <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/> </a></p>
 
-<div align="center" style="display: flex;">
+<div align="left" style="display: flex;">
   <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHBvYXM4ZXZjejdrcHVncXNjczRrbGphbmtuMnYxNWx4dHhjMzVmbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/Y4hGOHtho9VS6jI89U/giphy.gif" width="300"/>
   
   
