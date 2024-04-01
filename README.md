@@ -27,6 +27,8 @@ Here are some ideas to get you started:
 
 - 🌱 I’m currently learning **AIoT , DIP , Data mining , Cryptography and Network Security**
 
+- 📝 I regularly write articles on [Hackmd](https://hackmd.io/@simoneYC)
+
 <h3 align="left">Languages and Tools:
 <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTIxMXRxc2dtdmZjb3Q0c2kxNHpvdWxxMTllMWc4eWk5MDM0dzhndSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/tOJDs3ku2dRjVyqKLn/giphy.gif" width="100"/>
 </h3>
