@@ -25,7 +25,7 @@ Here are some ideas to get you started:
 
 - 🔭 I’m currently working on **Deep Learning and Image Recognition**
 
-- 🌱 I’m currently learning **AIoT , DIP , Data mining , Cryptography and Network Security**
+- 🌱 I’m currently learning **AIoT , DIP , Data mining , Cryptography and Network Security , Artificial Intelligence , Machine Learning**
 
 - 📝 I regularly write articles & NOTE on [Hackmd](https://hackmd.io/@simoneYC)
 
