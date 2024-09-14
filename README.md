@@ -23,9 +23,9 @@ Here are some ideas to get you started:
 <h3 align="center">A CSE student from Taiwan.</h3>
 <p align="left"> <img align="right" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTdweXd4c2loazF2ZjkweXU1YjJ0M2I0djJ3bHl4Z3gzMXBoOW80byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/cL117RnDXqzQmyI5Be/giphy.gif" width="200"/><img src="https://komarev.com/ghpvc/?username=simoneyc&label=Profile%20views&color=0e75b6&style=flat" alt="simoneyc" /> </p>
 
-- 🔭 I’m currently working on **CV with Deep Learning and Image Recognition**
+- 🔭 I’m currently working on **Computer Vision with Deep Learning**
 
-- 🌱 I’m currently learning **AIoT , DIP , Data mining , Cryptography and Network Security , AI , ML**
+- 🌱 I’m currently learning **AIoT , Digital Image Processing , Data mining , Cryptography and Network Security , Artificial Intelligence , Machine Learning**
 
 - 📝 I regularly write articles & NOTE on [Hackmd](https://hackmd.io/@simoneYC)
 
