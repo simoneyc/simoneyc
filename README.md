@@ -77,9 +77,11 @@ Here are some ideas to get you started:
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=simoneyc&show_icons=true&theme=highcontrast&title_color=ffffff&text_color=ffffff&locale=en" alt="simoneyc" /></p>
 -->
 
+<!--
 <div align="left">
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=simoneyc&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=noctis_minimus&hide_border=true&order=2" height="150" alt="languages graph"  />
 </div>
+-->
 
 <!--
 <div id="header" align="left">
