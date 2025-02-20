@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <!-- Import Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+        <button class="close-btn" onclick="toggleMenu()">&times;</button>
+        <a href="#about">👤 About Me</a>
+        <a href="#skills">🛠️ Skills</a>
+        <a href="#education">🎓 Education</a>
+        <a href="#experience">💼 Work Experience</a>
+        <a href="#projects">📌 Projects</a>
+        <a href="#portfolio">🚀 Portfolio</a>
+        <a href="#contact">📬 Contact</a>
+    </div>
+
+    <!-- Menu Button -->
+    <button class="menu-btn" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Main Content -->
+    <div class="container mt-5 pt-5">
+        <section id="about" class="section">
+            <h2>👤 About Me</h2>
+            <p>This is your personal profile, describing your field of expertise, interests, or goals.</p>
+        </section>
+
+        <section id="skills" class="section">
+            <h2 class="text-center">🛠️ Skills</h2>
+        
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="skills-category">
+                        <h4>Programming Languages</h4>
+                        <ul>
+                            <li>Python</li>
+                            <li>JavaScript</li>
+                            <li>C++</li>
+                            <li>Java</li>
+                        </ul>
+                    </div>
+                </div>
+        
+                <div class="col-md-6">
+                    <div class="skills-category">
+                        <h4>Web Front-end</h4>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Bootstrap</li>
+                            <li>React</li>
+                            <li>Vue</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="skills-category">
+                        <h4>Web Back-end</h4>
+                        <ul>
+                            <li>Node.js</li>
+                            <li>Express</li>
+                            <li>Django</li>
+                            <li>Flask</li>
+                        </ul>
+                    </div>
+                </div>
+        
+                <div class="col-md-6">
+                    <div class="skills-category">
+                        <h4>Database</h4>
+                        <ul>
+                            <li>MySQL</li>
+                            <li>PostgreSQL</li>
+                            <li>MongoDB</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="skills-category">
+                        <h4>DevOps</h4>
+                        <ul>
+                            <li>Docker</li>
+                            <li>Git</li>
+                            <li>GitHub Actions</li>
+                            <li>AWS</li>
+                            <li>Linux</li>
+                        </ul>
+                    </div>
+                </div>
+        
+                <div class="col-md-6">
+                    <div class="skills-category">
+                        <h4>Machine Learning</h4>
+                        <ul>
+                            <li>TensorFlow</li>
+                            <li>PyTorch</li>
+                            <li>Scikit-learn</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="skills-category">
+                        <h4>Deep Learning</h4>
+                        <ul>
+                            <li>NLTK</li>
+                            <li>SpaCy</li>
+                            <li>Hugging Face Transformers</li>
+                        </ul>
+                    </div>
+                </div>
+        
+                <div class="col-md-6">
+                    <div class="skills-category">
+                        <h4>Notes</h4>
+                        <ul>
+                            <li>Enjoy learning new technologies and continuously improving myself!</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="skills-category">
+                        <h4>Languages</h4>
+                        <ul>
+                            <li>Chinese | Expert</li>
+                            <li>English | Expert</li>
+                        </ul>
+                    </div>
+                </div>
+        
+                <div class="col-md-6">
+                    <div class="skills-category">
+                        <h4>Digital Image Processing</h4>
+                        <ul>
+                            <li>Presentation Creation</li>
+                            <li>Teamwork</li>
+                            <li>Problem-Solving Skills</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section">
+            <h2>🎓 Education</h2>
+            <ul>
+                <li><strong>School Name</strong> - Major (20XX - 20XX)</li>
+            </ul>
+        </section>
+
+        <section id="experience" class="section">
+            <h2>💼 Work Experience</h2>
+            <ul>
+                <li><strong>Company Name</strong> - Position (20XX - 20XX)</li>
+                <li><strong>Company Name</strong> - Position (20XX - 20XX)</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>📌 Projects</h2>
+            <ul>
+                <li><strong>Project Name</strong> - Brief Description (<a href="#">View Details</a>)</li>
+            </ul>
+        </section>
+
+        <section id="portfolio" class="section">
+            <h2>🚀 Portfolio</h2>
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-lg">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 1</h5>
+                            <p class="card-text">Brief introduction to this project</p>
+                            <a href="#" class="btn btn-primary btn-custom" target="_blank">View</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Card 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-lg">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 2</h5>
+                            <p class="card-text">Brief introduction to this project</p>
+                            <a href="#" class="btn btn-primary btn-custom" target="_blank">View</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Card 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-lg">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 3</h5>
+                            <p class="card-text">Brief introduction to this project</p>
+                            <a href="#" class="btn btn-primary btn-custom" target="_blank">View</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Card 4 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-lg">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 4</h5>
+                            <p class="card-text">Brief introduction to this project</p>
+                            <a href="#" class="btn btn-primary btn-custom" target="_blank">View</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Card 5 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-lg">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 5</h5>
+                            <p class="card-text">Brief introduction to this project</p>
+                            <a href="#" class="btn btn-primary btn-custom" target="_blank">View</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Card 6 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-lg">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 6</h5>
+                            <p class="card-text">Brief introduction to this project</p>
+                            <a href="#" class="btn btn-primary btn-custom" target="_blank">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>📬 Contact</h2>
+            <div class="contact-icons">
+                <a href="mailto:your.email@example.com" target="_blank" class="me-3">
+                    <i class="fas fa-envelope fa-2x"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="me-3">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+                <a href="https://github.com/yourusername" target="_blank" class="me-3">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+                <a href="https://www.facebook.com/yourprofile" target="_blank">
+                    <i class="fab fa-facebook fa-2x"></i>
+                </a>
+            </div>
+        </section>
+        
+    </div>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript for menu toggle -->
+    <script>
+        function toggleMenu() {
+            var sidebar = document.getElementById("sidebar");
+            if (sidebar.style.left === "0px") {
+                sidebar.style.left = "-280px";
+            } else {
+                sidebar.style.left = "0px";
+            }
+        }
+    </script>
+
+    <footer>
+        <p>© 2025 simoneyc. All rights reserved.</p>
+    </footer>
+
+
+</body>
+</html>
