@@ -1,0 +1,171 @@
+/* Neon Cyberpunk Street Style */
+/* Copyright © 2025 Your Name. All rights reserved. */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;400;600&display=swap');
+
+/* Global settings */
+body {
+    font-family: 'Rajdhani', sans-serif;
+    background: linear-gradient(180deg, #0d0d0d, #1a1a1a);
+    color: #ff0099;
+    text-shadow: 0 0 5px #ff0099, 0 0 10px #ff00ff;
+}
+
+h1, h2, h4, h5 {
+    font-family: 'Orbitron', sans-serif;
+    color: #00eaff;
+    text-shadow: 0 0 10px #00eaff, 0 0 20px #00ffff;
+}
+
+p, li, a {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ff0099;
+}
+
+/* Sidebar - Fixed to left */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    background: linear-gradient(135deg, #330033, #000000);
+    box-shadow: 0 0 15px #ff0099;
+    padding-top: 20px;
+    transition: 0.3s;
+    z-index: 1100;
+}
+
+.sidebar a {
+    display: block;
+    color: #00eaff;
+    padding: 12px 25px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background: rgba(0, 234, 255, 0.2);
+    border-left: 4px solid #00eaff;
+    padding-left: 21px;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+/* Close button - Fixed inside sidebar */
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: #ff0099;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.close-btn:hover {
+    color: #00eaff;
+    text-shadow: 0 0 10px #00eaff;
+}
+
+/* Menu button - Fixed to top left */
+.menu-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #ff0099;
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px #ff0099;
+    z-index: 1200;
+    transition: 0.3s;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.menu-btn:hover {
+    background-color: #cc0077;
+    box-shadow: 0 0 20px #ff0099;
+}
+
+/* Section styles */
+.section {
+    padding: 80px 0;
+    border-bottom: 2px solid #00eaff;
+    text-align: center;
+}
+
+/* Button styles */
+.btn-custom {
+    background-color: #00eaff;
+    color: black;
+    text-shadow: 0 0 5px #000000;
+    box-shadow: 0 0 10px #00eaff;
+    transition: 0.3s;
+}
+
+.btn-custom:hover {
+    background-color: #ff0099;
+    box-shadow: 0 0 20px #ff0099;
+}
+
+/* Cards */
+.card {
+    background: #111;
+    border: 1px solid #ff0099;
+    box-shadow: 0 0 10px #ff0099;
+    transition: 0.3s;
+    color: #00eaff;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ff0099;
+}
+
+/* Contact icons */
+.contact-icons a {
+    color: #00eaff;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+.contact-icons a:hover {
+    color: #ff0099;
+}
+
+/* Glitch Effect */
+@keyframes glitch {
+    0% { text-shadow: 2px 2px #ff0099; }
+    50% { text-shadow: -2px -2px #00eaff; }
+    100% { text-shadow: 2px 2px #ff0099; }
+}
+
+.glitch {
+    animation: glitch 1s infinite alternate;
+}
+
+footer {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #ff0099;
+    text-shadow: 0 0 5px #ff0099, 0 0 10px #ff00ff;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border-top: 2px solid #ff0099;
+    box-shadow: 0 0 10px #ff0099;
+}
+
+footer p {
+    margin: 0;
+    padding: 5px;
+    font-weight: bold;
+}
