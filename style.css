@@ -176,6 +176,12 @@ p, li, a {
     text-align: left;
 }
 
+@media (max-width: 768px) {
+    .about-text {
+        margin-top: 20px;
+    }
+}
+
 /* Contact icons */
 .contact-icons a {
     color: #00eaff;
