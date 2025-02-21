@@ -166,6 +166,7 @@ p, li, a {
 
 .about-photo-container:hover .emoji-container {
     opacity: 1;
+    margin-bottom: 20px;
 }
 
 .emoji {
@@ -174,12 +175,6 @@ p, li, a {
 
 .about-text {
     text-align: left;
-}
-
-@media (max-width: 768px) {
-    .about-text {
-        margin-top: 20px;
-    }
 }
 
 /* Contact icons */
