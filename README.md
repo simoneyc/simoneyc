@@ -25,7 +25,7 @@ Here are some ideas to get you started:
 
 - 🔭 I’m currently working on **Computer Vision with Deep Learning , Web front-end**
 
-- 🌱 I’m currently learning **AIoT , Digital Image Processing , Artificial Intelligence , Machine Learning**
+- 🌱 I’m currently learning **AIoT , Digital Image Processing , Artificial Intelligence , Machine Learning , Docker , Node.js**
 
 - 📝 I often write articles & NOTE on [Hackmd](https://hackmd.io/@simoneYC)
 - 🖥 Feel free to visit my [website](https://simoneyc.github.io/simoneyc)
