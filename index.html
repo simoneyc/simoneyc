@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="final_ver.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <style>
@@ -32,6 +32,26 @@
 </head>
 
 <body>
+    <audio id="bg-music" loop>
+        <source src="Lost Sky, Jex - Where We Started (feat. Jex) [NCS Release].mp3" type="audio/mpeg">
+        Sorry, your browser does not support audio files^^(Audio files embedded in web pages)
+    </audio>
+      
+    <button id="music-toggle" class="music-btn">
+        <span class="icon-wrapper">
+            <i class="fas fa-play"></i>
+        </span>
+        <div class="music-info-wrapper">
+            <div class="music-info">
+                Song: Lost Sky - Where We Started (feat. Jex) [NCS Release]
+                Music provided by NoCopyrightSounds
+                Free Download/Stream: http://ncs.io/WhereWeStarted
+                Watch: http://youtu.be/U9pGr6KMdyg
+            </div>
+        </div>
+    </button>
+      
+      
     <div id="particles-js"></div>
     <div id="language-container" style="position: fixed; top: 20px; right: 20px; z-index: 1000;">
         <button id="language-toggle" class="btn btn-custom">🌐 中文</button>
@@ -229,7 +249,7 @@
             <h2 data-en="🎓 Education" data-zh="🎓 學歷">🎓 Education</h2>
             <ul>
                 <li><strong data-en="National Chung Hsing University" data-zh="國立中興大學">National Chung Hsing University</strong> - <span data-en="Computer Science" data-zh="資訊工程學系">Computer Science</span> (<span data-en="2021 - 2025" data-zh="2021 - 2025">2021 - 2025</span>)</li>
-                <li><strong data-en="National Cheng Kung University" data-zh="國立成功大學">National Chung Hsing University</strong> - <span data-en="Computer Science" data-zh="資訊工程學系">Computer Science</span> (<span data-en="2025 - " data-zh="2025 - ">2025 - </span>)</li>
+                <li><strong data-en="National Cheng Kung University" data-zh="國立成功大學">National Cheng Kung University</strong> - <span data-en="Computer Science" data-zh="資訊工程學系">Computer Science</span> (<span data-en="2025 - " data-zh="2025 - ">2025 - </span>)</li>
             </ul>
         </section>
         
@@ -377,6 +397,56 @@
     </div>
 
     <script>
+
+
+const music = document.getElementById('bg-music');
+const toggleBtn = document.getElementById('music-toggle');
+const icon = toggleBtn.querySelector('i');
+
+let hasStarted = false;
+
+// 封裝播放函數（重用）
+function startMusic() {
+  music.play().then(() => {
+    icon.classList.remove('fa-play');
+    icon.classList.add('fa-pause');
+    hasStarted = true;
+    console.log("音樂已播放");
+  }).catch(err => {
+    console.warn("播放失敗：", err);
+  });
+}
+
+// 1️⃣ 初次互動才播放（只執行一次）
+function handleUserInteraction() {
+  if (!hasStarted) {
+    startMusic();
+  }
+}
+window.addEventListener('click', handleUserInteraction, { once: true });
+window.addEventListener('keydown', handleUserInteraction, { once: true });
+window.addEventListener('scroll', handleUserInteraction, { once: true });
+
+// 2️⃣ 按下按鈕播放 / 暫停
+toggleBtn.addEventListener('click', (e) => {
+  e.stopPropagation(); // 防止再次觸發初次互動
+  if (!hasStarted) {
+    startMusic(); // 若還沒播放就直接播
+  } else {
+    if (music.paused) {
+      startMusic();
+    } else {
+      music.pause();
+      icon.classList.remove('fa-pause');
+      icon.classList.add('fa-play');
+    }
+  }
+});
+
+
+
+
+
         function toggleMenu() {
             var sidebar = document.getElementById("sidebar");
             sidebar.style.left = sidebar.style.left === "0px" ? "-250px" : "0px";
@@ -504,7 +574,6 @@
             loadParticles();
         });
 
-
     </script>
 
     <footer>
@@ -513,6 +582,5 @@
 
 </body>
 </html>
-
 
 
