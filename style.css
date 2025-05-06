@@ -496,7 +496,7 @@ ul {
 
 .music-btn {
     position: fixed;
-    bottom: 20px;
+    bottom: 60px;
     right: 20px;
     z-index: 1000;
     width: 50px;
