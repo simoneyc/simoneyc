@@ -12,12 +12,19 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
-      - name: Generate snake
+      - name: Generate github-dark snake
         uses: Platane/snk@v3
         with:
           github_user_name: simoneyc
-          theme: rainbow               # 🌈 彩色模式
-          outputs: dist/github-contribution-grid-snake.svg
+          theme: github-dark
+          outputs: dist/github-dark-snake.svg
+
+      - name: Generate rainbow snake
+        uses: Platane/snk@v3
+        with:
+          github_user_name: simoneyc
+          theme: rainbow
+          outputs: dist/rainbow-snake.svg
 
       - name: Deploy to output branch
         uses: peaceiris/actions-gh-pages@v3
