@@ -11,14 +11,13 @@ permissions:
 jobs:
   generate:
     runs-on: ubuntu-latest
-
     steps:
       - name: Generate snake
         uses: Platane/snk@v3
         with:
           github_user_name: simoneyc
-          outputs: |
-            dist/github-contribution-grid-snake.svg
+          theme: rainbow               # 🌈 彩色模式
+          outputs: dist/github-contribution-grid-snake.svg
 
       - name: Deploy to output branch
         uses: peaceiris/actions-gh-pages@v3
