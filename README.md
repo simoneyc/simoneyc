@@ -96,4 +96,7 @@ Here are some ideas to get you started:
   <img src="https://media.giphy.com/media/HTCtdDyPCHXGmHSo6x/giphy.gif" width="150"/>
 </div>
 -->
-![snake gif](https://github.com/simoneyc/simoneyc/blob/output/github-contribution-grid-snake.svg)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/simoneyc/simoneyc/blob/output/github-dark-snake.svg">
+  <img alt="snake gif" src="https://github.com/simoneyc/simoneyc/blob/output/rainbow-snake.svg">
+</picture>
