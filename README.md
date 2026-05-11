@@ -30,7 +30,7 @@ Here are some ideas to get you started:
 - 📝 I often write articles & NOTE on [Hackmd](https://hackmd.io/@simoneYC)
 - 🖥 Feel free to visit my [Website](https://simoneyc.github.io/simoneyc)
 - 🎮 A simple typing [Game](https://simoneyc.github.io/typing-game-online/frontend)
-
+<!--
 <h3 align="left">Languages and Tools:
 <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTIxMXRxc2dtdmZjb3Q0c2kxNHpvdWxxMTllMWc4eWk5MDM0dzhndSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/tOJDs3ku2dRjVyqKLn/giphy.gif" width="100"/>
 
@@ -63,6 +63,7 @@ Here are some ideas to get you started:
   <a href="https://scikit-learn.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40"/> </a> 
   <a href="https://pytorch.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="40" height="40"/> </a> 
   <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/> </a></p>
+-->
 
 <div align="left" style="display: flex;">
   <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHBvYXM4ZXZjejdrcHVncXNjczRrbGphbmtuMnYxNWx4dHhjMzVmbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/Y4hGOHtho9VS6jI89U/giphy.gif" width="300"/>
