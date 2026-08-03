@@ -168,3 +168,11 @@ function toggleMenu() {
         document.addEventListener("DOMContentLoaded", function () {
             loadParticles();
         });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const copyrightYear = document.getElementById("copyright-year");
+        
+            if (copyrightYear) {
+                copyrightYear.textContent = new Date().getFullYear();
+            }
+        });
