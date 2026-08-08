@@ -1,7 +1,48 @@
+const sidebar = document.getElementById("sidebar");
+const sidebarOverlay = document.getElementById("sidebar-overlay");
+const menuToggle = document.getElementById("menu-toggle");
+const sidebarLinks = sidebar.querySelectorAll("a");
+
+function setMenuState(isOpen) {
+    sidebar.classList.toggle("active", isOpen);
+    sidebarOverlay.classList.toggle("active", isOpen);
+    document.body.classList.toggle("menu-open", isOpen);
+
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+    sidebarOverlay.setAttribute("aria-hidden", String(!isOpen));
+
+    menuToggle.setAttribute(
+        "aria-label",
+        isOpen ? "Close navigation menu" : "Open navigation menu"
+    );
+}
+
 function toggleMenu() {
-            var sidebar = document.getElementById("sidebar");
-            sidebar.style.left = sidebar.style.left === "0px" ? "-250px" : "0px";
-        }
+    const isOpen = sidebar.classList.contains("active");
+    setMenuState(!isOpen);
+}
+
+function closeMenu() {
+    setMenuState(false);
+}
+
+sidebarOverlay.addEventListener("click", closeMenu);
+
+sidebarLinks.forEach(link => {
+    link.addEventListener("click", closeMenu);
+});
+
+document.addEventListener("keydown", event => {
+    if (event.key === "Escape") {
+        closeMenu();
+    }
+});
+
+window.addEventListener("resize", function () {
+    if (window.innerWidth > 768) {
+        closeMenu();
+    }
+});
 
         const languageToggle = document.getElementById("language-toggle");
         const englishOption = languageToggle.querySelector(".language-en");

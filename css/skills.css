@@ -1,0 +1,117 @@
+/* =====================================================
+   Skills: Bento Glass layout
+   ===================================================== */
+
+#skills .row {
+    row-gap: 24px;
+}
+
+#skills .skills-category {
+    position: relative;
+    min-height: 100%;
+    overflow: hidden;
+    padding: 28px;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    background:
+        linear-gradient(
+            135deg,
+            rgba(77, 216, 230, 0.07),
+            transparent 42%
+        ),
+        var(--surface);
+    box-shadow: var(--shadow);
+    transition:
+        border-color 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+#skills .skills-category::before {
+    position: absolute;
+    top: 0;
+    left: 28px;
+    width: 52px;
+    height: 3px;
+    border-radius: 0 0 999px 999px;
+    background: linear-gradient(
+        90deg,
+        var(--accent),
+        var(--secondary-accent)
+    );
+    content: "";
+}
+
+#skills .skills-category:hover {
+    border-color: var(--accent-border);
+    box-shadow:
+        var(--shadow),
+        0 0 0 1px rgba(77, 216, 230, 0.06);
+    transform: translateY(-4px);
+}
+
+#skills .skills-category h4 {
+    margin: 6px 0 20px;
+    color: var(--text-primary);
+    font-size: 1.05rem;
+    text-align: left;
+}
+
+#skills .skills-category ul {
+    display: grid;
+    margin: 0;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px 18px;
+}
+
+#skills .skills-category li,
+.light-mode #skills .skills-category li {
+    position: relative;
+    padding-left: 14px;
+    color: var(--text-secondary);
+    font-size: 0.88rem;
+    font-weight: 500;
+    line-height: 1.6;
+    text-align: left;
+    text-shadow: none;
+    transform: none;
+}
+
+#skills .skills-category li::before {
+    position: absolute;
+    top: 0.72em;
+    left: 0;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 8px rgba(77, 216, 230, 0.3);
+    content: "";
+}
+
+#skills .skills-category li:hover,
+.light-mode #skills .skills-category li:hover {
+    color: var(--accent);
+    text-shadow: none;
+    transform: none;
+}
+
+@media (max-width: 576px) {
+    #skills .skills-category {
+        padding: 24px;
+    }
+
+    #skills .skills-category ul {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #skills .skills-category {
+        transition: none;
+    }
+
+    #skills .skills-category:hover {
+        transform: none;
+    }
+}

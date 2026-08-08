@@ -51,7 +51,6 @@
     border-left: 4px solid #6f4e37;
 }
 
-.light-mode .menu-btn,
 .light-mode .btn-custom {
     background-color: #c4a484;
     color: white;
@@ -121,20 +120,6 @@
     background-color: #8b5a2b;
 }
 
-.light-mode .close-btn {
-    color: #8b5a2b;
-    transition: 0.3s;
-}
-
-.light-mode .close-btn:hover {
-    color: #5a4637;
-}
-
 .light-mode .emoji-container .emoji {
     text-shadow: none;
-}
-
-.light-mode .menu-btn:hover {
-    background-color: #a67b5b;
-    box-shadow: 0 0 10px rgba(139, 90, 43, 0.6);
 }

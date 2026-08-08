@@ -1,0 +1,383 @@
+/* =====================================================
+   Global visual design system
+   ===================================================== */
+
+:root {
+    color-scheme: dark;
+
+    --page-bg: #080c12;
+    --page-bg-secondary: #0d131c;
+    --surface: rgba(17, 24, 33, 0.82);
+    --surface-solid: #111821;
+    --surface-hover: #151f2b;
+
+    --text-primary: #e7edf3;
+    --text-secondary: #b6c1cc;
+    --text-muted: #8998a7;
+
+    --accent: #4dd8e6;
+    --accent-strong: #78e9f3;
+    --accent-soft: rgba(77, 216, 230, 0.1);
+    --accent-border: rgba(77, 216, 230, 0.24);
+
+    --secondary-accent: #9b8cff;
+    --border: rgba(182, 193, 204, 0.14);
+    --shadow: 0 18px 50px rgba(0, 0, 0, 0.24);
+
+    --heading-font: 'Space Grotesk', 'Noto Sans TC', sans-serif;
+    --body-font: 'Manrope', 'Noto Sans TC', sans-serif;
+}
+
+.light-mode {
+    color-scheme: light;
+
+    --page-bg: #f5f7fa;
+    --page-bg-secondary: #edf1f5;
+    --surface: rgba(255, 255, 255, 0.82);
+    --surface-solid: #ffffff;
+    --surface-hover: #f7f9fb;
+
+    --text-primary: #202936;
+    --text-secondary: #4c5a68;
+    --text-muted: #6f7d8a;
+
+    --accent: #087f8c;
+    --accent-strong: #056873;
+    --accent-soft: rgba(8, 127, 140, 0.09);
+    --accent-border: rgba(8, 127, 140, 0.22);
+
+    --secondary-accent: #6957c8;
+    --border: rgba(32, 41, 54, 0.12);
+    --shadow: 0 18px 50px rgba(40, 55, 70, 0.1);
+}
+
+/* Base typography */
+body,
+body.light-mode {
+    min-height: 100vh;
+    color: var(--text-primary);
+    background:
+        radial-gradient(
+            circle at 15% 10%,
+            rgba(77, 216, 230, 0.07),
+            transparent 32%
+        ),
+        radial-gradient(
+            circle at 85% 25%,
+            rgba(155, 140, 255, 0.06),
+            transparent 28%
+        ),
+        linear-gradient(
+            180deg,
+            var(--page-bg),
+            var(--page-bg-secondary)
+        );
+    font-family: var(--body-font);
+    font-weight: 400;
+    text-shadow: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--text-primary);
+    font-family: var(--heading-font);
+    font-weight: 600;
+    letter-spacing: -0.025em;
+    text-shadow: none;
+}
+
+p,
+li,
+a,
+button {
+    font-family: var(--body-font);
+}
+
+p,
+li {
+    color: var(--text-secondary);
+    line-height: 1.75;
+    text-shadow: none;
+}
+
+a {
+    color: var(--accent);
+    text-shadow: none;
+}
+
+a:hover {
+    color: var(--accent-strong);
+}
+
+/* General sections */
+.section {
+    border-bottom: 1px solid var(--border);
+}
+
+.section > h2 {
+    margin-bottom: 14px;
+    color: var(--text-primary);
+    font-size: clamp(2rem, 4vw, 3rem);
+    text-shadow: none;
+}
+
+.section > h2::after {
+    display: block;
+    width: 42px;
+    height: 3px;
+    margin: 14px auto 0;
+    border-radius: 999px;
+    background: linear-gradient(
+        90deg,
+        var(--accent),
+        var(--secondary-accent)
+    );
+    content: "";
+}
+
+.section > p {
+    color: var(--text-muted);
+}
+
+
+/* Shared cards */
+.card,
+.light-mode .card {
+    overflow: hidden;
+    padding: 0;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    color: var(--text-primary);
+    background: var(--surface);
+    box-shadow: var(--shadow);
+    text-shadow: none;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.card:hover {
+    border-color: var(--accent-border);
+    background: var(--surface-hover);
+    box-shadow:
+        var(--shadow),
+        0 0 0 1px var(--accent-border);
+    transform: translateY(-6px);
+}
+
+.card-img-top {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 22px;
+}
+
+.card-title,
+.light-mode .card-title {
+    color: var(--text-primary);
+    font-family: var(--heading-font);
+    font-size: 1.08rem;
+    line-height: 1.45;
+    text-shadow: none;
+}
+
+.card-text,
+.light-mode .card-text {
+    color: var(--text-muted);
+    line-height: 1.7;
+    text-shadow: none;
+}
+
+/* Shared buttons */
+.btn-custom,
+.light-mode .btn-custom {
+    border: 1px solid var(--accent-border);
+    border-radius: 10px;
+    color: var(--page-bg);
+    background: var(--accent);
+    box-shadow: none;
+    font-weight: 700;
+    text-shadow: none;
+}
+
+.btn-custom:hover,
+.light-mode .btn-custom:hover {
+    border-color: var(--accent);
+    color: var(--page-bg);
+    background: var(--accent-strong);
+    box-shadow: 0 8px 24px rgba(77, 216, 230, 0.16);
+}
+
+/* Skills */
+.skills-category {
+    height: 100%;
+    padding: 28px;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    background: var(--surface);
+}
+
+.skills-category h4 {
+    margin-bottom: 18px;
+    color: var(--text-primary);
+    font-size: 1.05rem;
+    text-shadow: none;
+}
+
+.skills-category ul li,
+.light-mode .skills-category ul li {
+    color: var(--text-secondary);
+    font-weight: 500;
+    text-shadow: none;
+}
+
+.skills-category ul li:hover,
+.light-mode .skills-category ul li:hover {
+    color: var(--accent);
+    text-shadow: none;
+    transform: none;
+}
+
+/* Contact and footer */
+.contact-icons a,
+.light-mode .contact-icons a {
+    color: var(--text-secondary);
+    text-shadow: none;
+}
+
+.contact-icons a:hover,
+.light-mode .contact-icons a:hover {
+    color: var(--accent);
+    text-shadow: none;
+    transform: translateY(-4px);
+}
+
+footer,
+.light-mode footer {
+    border-top: 1px solid var(--border);
+    color: var(--text-muted);
+    background: rgba(8, 12, 18, 0.65);
+    box-shadow: none;
+    text-shadow: none;
+}
+
+.light-mode footer {
+    background: rgba(255, 255, 255, 0.56);
+}
+
+footer p {
+    color: var(--text-muted);
+    font-size: 0.82rem;
+    font-weight: 500;
+    text-shadow: none;
+}
+
+/* SimoneYC brand logo */
+.brand-logo {
+    width: 34px;
+    height: 34px;
+    flex: 0 0 auto;
+    overflow: visible;
+    filter: drop-shadow(0 0 8px rgba(77, 216, 230, 0.22));
+}
+
+.brand-logo-frame,
+.brand-logo-y,
+.brand-logo-c {
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.brand-logo-frame {
+    stroke: var(--accent);
+    stroke-width: 1.8;
+}
+
+.brand-logo-y {
+    stroke: var(--accent-strong);
+    stroke-width: 2.4;
+}
+
+.brand-logo-c {
+    stroke: var(--text-primary);
+    stroke-width: 2.4;
+}
+
+.nav-brand:hover .brand-logo {
+    filter: drop-shadow(0 0 12px rgba(77, 216, 230, 0.46));
+}
+
+/* SimoneYC brand */
+.nav-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transform: translateY(0);
+    transition:
+        color 0.25s ease,
+        transform 0.25s ease,
+        filter 0.25s ease;
+}
+
+.brand-logo {
+    display: block;
+    width: 42px;
+    height: 42px;
+    flex: 0 0 42px;
+    border-radius: 10px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 6px rgba(77, 216, 230, 0.14));
+    transition: filter 0.25s ease;
+}
+
+.nav-brand > span {
+    transition:
+        color 0.25s ease,
+        text-shadow 0.25s ease;
+}
+
+.nav-brand:hover {
+    color: var(--text-primary);
+    filter: none;
+    transform: translateY(-3px);
+}
+
+.nav-brand:hover .brand-logo {
+    filter: drop-shadow(0 5px 10px rgba(77, 216, 230, 0.32));
+}
+
+.nav-brand:hover > span {
+    color: var(--accent-strong);
+    text-shadow: 0 0 14px rgba(77, 216, 230, 0.24);
+}
+
+.nav-brand:active {
+    transform: translateY(-1px) scale(0.98);
+}
+
+@media (max-width: 900px) {
+    .brand-logo {
+        width: 38px;
+        height: 38px;
+        flex-basis: 38px;
+        border-radius: 9px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .nav-brand {
+        transition: none;
+    }
+
+    .nav-brand:hover,
+    .nav-brand:active {
+        transform: none;
+    }
+}
