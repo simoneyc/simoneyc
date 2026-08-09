@@ -183,12 +183,13 @@ window.addEventListener("resize", function () {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add("show");
-                        observer.unobserve(entry.target);
+                    } else {
+                        entry.target.classList.remove("show");
                     }
                 });
             }, {
-                threshold: 0.01,
-                rootMargin: "0px 0px -8% 0px"
+                threshold: 0,
+                rootMargin: "120px 0px 120px 0px"
             });
 
             fadeElements.forEach(el => observer.observe(el));

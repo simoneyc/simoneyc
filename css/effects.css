@@ -1,12 +1,29 @@
 .fade-in {
     opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    transform: translateY(52px) scale(0.985);
+    transition:
+        opacity 0.75s ease-out,
+        transform 0.95s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .fade-in.show {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
+}
+
+@media (max-width: 576px) {
+    .fade-in {
+        transform: translateY(42px) scale(0.99);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .fade-in,
+    .fade-in.show {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
 }
   
 /* Display controls: language and color theme */

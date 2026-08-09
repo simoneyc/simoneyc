@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/components.css?v=2">
     <link rel="stylesheet" href="css/themes.css">
-    <link rel="stylesheet" href="css/effects.css">
+    <link rel="stylesheet" href="css/effects.css?v=2">
     <link rel="stylesheet" href="css/hero.css">
     <link rel="stylesheet" href="css/design-system.css">
     <link rel="stylesheet" href="css/skills.css?v=2">
@@ -269,129 +269,148 @@
         
         <section id="skills" class="section fade-in">
             <h2 data-en="🛠️ Skills" data-zh="🛠️ 技能">🛠️ Skills</h2>
-            <p data-en="Some of my skills." data-zh="一些小技能^^">Some of my skills.</p>
+            <p
+                data-en="Technologies I use across research and software development."
+                data-zh="我在研究與軟體開發中使用的技術。"
+            >
+                Technologies I use across research and software development.
+            </p>
 
-            <div class="row g-4">
-                <div class="col-md-6">
+            <div class="skills-grid">
+                <div class="skills-item">
                     <div class="skills-category">
                         <h4 data-en="Programming Languages" data-zh="程式語言">Programming Languages</h4>
                         <ul>
                             <li>Python</li>
-                            <li>C</li>
-                            <li>C++</li>
+                            <li>C / C++</li>
                             <li>Java</li>
+                            <li>JavaScript</li>
                             <li>R</li>
+                            <li>SQL</li>
+                            <li>Assembly</li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="col-md-6">
+                <div class="skills-item">
                     <div class="skills-category">
-                        <h4 data-en="Machine Learning" data-zh="機器學習">Machine Learning</h4>
+                        <h4 data-en="AI &amp; Machine Learning" data-zh="人工智慧與機器學習">AI &amp; Machine Learning</h4>
                         <ul>
-                            <li>TensorFlow</li>
                             <li>PyTorch</li>
+                            <li>TensorFlow</li>
                             <li>Scikit-learn</li>
                             <li>NumPy</li>
                             <li>Pandas</li>
+                            <li>Model Evaluation</li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="col-md-6">
-                    <div class="skills-category">
-                        <h4 data-en="Web Back-end" data-zh="後端">Web Back-end</h4>
-                        <ul>
-                            <li>Flask</li>
-                            <li>MySQL</li>
-                            <li>Oracle</li>
-                            <li>MongoDB</li>
-                            <li>Web Scraping</li>
-                            <li>Auto Mail</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="skills-category">
-                        <h4 data-en="Digital Image Processing" data-zh="數位影像處理">Digital Image Processing</h4>
-                        <ul>
-                            <li>Image Enhancement</li>
-                            <li>Image Restoration</li>
-                            <li>Edge Detection</li>
-                            <li>Thresholding</li>
-                            <li>Morphological Processing</li>
-                            <li>Feature Extraction</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="skills-category">
-                        <h4 data-en="Web Front-end" data-zh="前端">Web Front-end</h4>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Javascript</li>
-                            <li>Bootstrap</li>
-                            <li>Tkinter</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="skills-category">
-                        <h4 data-en="DevOps" data-zh="DevOps">DevOps</h4>
-                        <ul>
-                            <li>Docker</li>
-                            <li>Node.js</li>
-                            <li>Git</li>
-                            <li>GitHub Actions</li>
-                            <li>Linux</li>
-                        </ul>
-                    </div>
-                </div>
-            
-                <div class="col-md-6">
+                <div class="skills-item">
                     <div class="skills-category">
                         <h4 data-en="Computer Vision" data-zh="電腦視覺">Computer Vision</h4>
                         <ul>
-                            <li>YOLO</li>
                             <li>OpenCV</li>
+                            <li>YOLO</li>
+                            <li>Faster R-CNN</li>
+                            <li>Object Detection</li>
+                            <li>Optical Flow</li>
+                            <li>Feature Matching</li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="col-md-6">
+                <div class="skills-item">
                     <div class="skills-category">
-                        <h4 data-en="AIoT" data-zh="人工智慧&物聯網">AIoT</h4>
+                        <h4 data-en="Medical Imaging &amp; Generative AI" data-zh="醫療影像與生成式 AI">Medical Imaging &amp; Generative AI</h4>
+                        <ul>
+                            <li>DICOM Processing</li>
+                            <li>Medical Image Preprocessing</li>
+                            <li>GAN-based Image Translation</li>
+                            <li>Cross-domain Image Synthesis</li>
+                            <li>Image Segmentation</li>
+                            <li>Morphological Processing</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="skills-item">
+                    <div class="skills-category">
+                        <h4 data-en="Web Development" data-zh="網頁開發">Web Development</h4>
+                        <ul>
+                            <li>HTML / CSS</li>
+                            <li>Bootstrap</li>
+                            <li>Flask</li>
+                            <li>Node.js / Express</li>
+                            <li>REST API</li>
+                            <li>Responsive Web Design</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="skills-item">
+                    <div class="skills-category">
+                        <h4 data-en="Databases &amp; Cloud" data-zh="資料庫與雲端服務">Databases &amp; Cloud</h4>
+                        <ul>
+                            <li>SQLite</li>
+                            <li>MySQL</li>
+                            <li>Oracle</li>
+                            <li>MongoDB</li>
+                            <li>Firebase</li>
+                            <li>Render</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="skills-item">
+                    <div class="skills-category">
+                        <h4 data-en="Embedded &amp; IoT" data-zh="嵌入式系統與物聯網">Embedded &amp; IoT</h4>
                         <ul>
                             <li>ESP32</li>
                             <li>Arduino</li>
-                            <li>Firebase</li>
-                        </ul>
-                    </div>
-                </div>
-            
-                <div class="col-md-6">
-                    <div class="skills-category">
-                        <h4 data-en="Other" data-zh="其他">Other</h4>
-                        <ul>
-                            <li>HackMD</li>
-                            <li>canva</li>
-                            <li>PPT</li>
-                            <li>Word</li>
+                            <li>Sensor Integration</li>
+                            <li>IoT Data Collection</li>
+                            <li>Hardware-Software Integration</li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="col-md-6">
+                <div class="skills-item">
                     <div class="skills-category">
-                        <h4 data-en="Languages" data-zh="語言">Languages</h4>
+                        <h4 data-en="Desktop &amp; Automation" data-zh="桌面應用與自動化">Desktop &amp; Automation</h4>
+                        <ul>
+                            <li>Tkinter</li>
+                            <li>PyQt5</li>
+                            <li>ttkbootstrap</li>
+                            <li>Web Scraping</li>
+                            <li>FFmpeg</li>
+                            <li>Task Automation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="skills-item">
+                    <div class="skills-category">
+                        <h4 data-en="Systems &amp; DevOps" data-zh="系統與 DevOps">Systems &amp; DevOps</h4>
+                        <ul>
+                            <li>Linux / UNIX</li>
+                            <li>Git</li>
+                            <li>GitHub Actions</li>
+                            <li>Docker</li>
+                            <li>GitHub Pages</li>
+                            <li>Gunicorn</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="skills-item">
+                    <div class="skills-category">
+                        <h4 data-en="Languages" data-zh="語言能力">Languages</h4>
                         <ul>
                             <li data-en="Mandarin - Native" data-zh="中文 - 母語">Mandarin - Native</li>
-                            <li data-en="English - Expert (TOEIC 885)" data-zh="英文 - 專業(多益 885)">English - Expert (TOEIC 885)</li>
-                            <li data-en="Korean - Basic (I)" data-zh="韓文 - 基本(I)">Korean - Basic (I)</li>
+                            <li data-en="Taiwanese - Fluent" data-zh="台語 - 精通">Taiwanese - Fluent</li>
+                            <li data-en="English - TOEIC 885" data-zh="英文 - 多益 885">English - TOEIC 885</li>
+                            <li data-en="Korean - Basic" data-zh="韓文 - 基礎">Korean - Basic</li>
                         </ul>
                     </div>
                 </div>
@@ -749,7 +768,7 @@
         </p>
     </footer>
 
-    <script src="js/main.js?v=2"></script>
+    <script src="js/main.js?v=3"></script>
 
     </body>
 </html>
