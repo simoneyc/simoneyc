@@ -171,15 +171,25 @@ window.addEventListener("resize", function () {
         document.addEventListener("DOMContentLoaded", function () {
             const fadeElements = document.querySelectorAll(".fade-in");
 
+            if (
+                !("IntersectionObserver" in window) ||
+                window.matchMedia("(prefers-reduced-motion: reduce)").matches
+            ) {
+                fadeElements.forEach(element => element.classList.add("show"));
+                return;
+            }
+
             const observer = new IntersectionObserver(entries => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add("show");
-                    } else {
-                        entry.target.classList.remove("show");
+                        observer.unobserve(entry.target);
                     }
                 });
-            }, { threshold: 0.2 });
+            }, {
+                threshold: 0.01,
+                rootMargin: "0px 0px -8% 0px"
+            });
 
             fadeElements.forEach(el => observer.observe(el));
         });
