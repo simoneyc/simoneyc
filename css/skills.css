@@ -2,8 +2,15 @@
    Skills: Bento Glass layout
    ===================================================== */
 
-#skills .row {
-    row-gap: 24px;
+#skills .skills-grid {
+    display: grid;
+    margin-top: 28px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+#skills .skills-item {
+    min-width: 0;
 }
 
 #skills .skills-category {
@@ -97,6 +104,11 @@
 }
 
 @media (max-width: 576px) {
+    #skills .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
     #skills .skills-category {
         padding: 24px;
     }

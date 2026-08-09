@@ -18,7 +18,8 @@
     <link rel="stylesheet" href="css/effects.css">
     <link rel="stylesheet" href="css/hero.css">
     <link rel="stylesheet" href="css/design-system.css">
-    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/skills.css?v=2">
+    <link rel="stylesheet" href="css/projects.css?v=6">
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
 
@@ -270,7 +271,7 @@
             <h2 data-en="🛠️ Skills" data-zh="🛠️ 技能">🛠️ Skills</h2>
             <p data-en="Some of my skills." data-zh="一些小技能^^">Some of my skills.</p>
 
-            <div class="row justify-content-center">
+            <div class="row g-4">
                 <div class="col-md-6">
                     <div class="skills-category">
                         <h4 data-en="Programming Languages" data-zh="程式語言">Programming Languages</h4>
@@ -283,7 +284,7 @@
                         </ul>
                     </div>
                 </div>
-        
+
                 <div class="col-md-6">
                     <div class="skills-category">
                         <h4 data-en="Machine Learning" data-zh="機器學習">Machine Learning</h4>
@@ -296,9 +297,7 @@
                         </ul>
                     </div>
                 </div>
-            </div>
-        
-            <div class="row justify-content-center">
+
                 <div class="col-md-6">
                     <div class="skills-category">
                         <h4 data-en="Web Back-end" data-zh="後端">Web Back-end</h4>
@@ -326,9 +325,7 @@
                         </ul>
                     </div>
                 </div>
-            </div>
-        
-            <div class="row justify-content-center">
+
                 <div class="col-md-6">
                     <div class="skills-category">
                         <h4 data-en="Web Front-end" data-zh="前端">Web Front-end</h4>
@@ -354,9 +351,7 @@
                         </ul>
                     </div>
                 </div>
-            </div>
-        
-            <div class="row justify-content-center">
+            
                 <div class="col-md-6">
                     <div class="skills-category">
                         <h4 data-en="Computer Vision" data-zh="電腦視覺">Computer Vision</h4>
@@ -377,9 +372,7 @@
                         </ul>
                     </div>
                 </div>
-            </div>
-        
-            <div class="row justify-content-center">
+            
                 <div class="col-md-6">
                     <div class="skills-category">
                         <h4 data-en="Other" data-zh="其他">Other</h4>
@@ -391,7 +384,7 @@
                         </ul>
                     </div>
                 </div>
-                
+
                 <div class="col-md-6">
                     <div class="skills-category">
                         <h4 data-en="Languages" data-zh="語言">Languages</h4>
@@ -430,84 +423,270 @@
         </section>
 
         <section id="projects" class="section fade-in">
-            <h2 data-en="📌 Projects" data-zh="📌 專案">📌 Projects</h2>
-            <div class="row justify-content-center">
-                <div class="col-md-4 mb-4">
-                    <div class="card shadow-lg">
-                        <img src="jpg/yolo.gif" class="card-img-top" alt="Project Thumbnail">
-                        <div class="card-body">
-                            <h5 class="card-title">A Study on Automatic Pedestrian Safety Detection System Using Deep Learning and Optical Flow</h5>
-                            <p class="card-text">Develop a system using image processing, DL, YOLO, Optical Flow, and IoU to detect vehicles not yielding to pedestrians, with automated email notifications.</p>
-                            <div class="d-flex justify-content-center gap-2">
-                                <a href="https://www.youtube.com/playlist?list=PLA49zAxbZWJ1u609iHgwT64c6EU11yz8z" class="btn btn-primary btn-custom" target="_blank">▶️</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="col-md-4 mb-4">
-                    <div class="card shadow-lg">
-                        <img src="jpg/ML.gif" class="card-img-top" alt="Project Thumbnail">
-                        <div class="card-body">
-                            <h5 class="card-title">Career Change Prediction App</h5>
-                            <p class="card-text">A machine learning-powered web app that predicts career change likelihood based on personal and industry factors, with a user-friendly interface for real-time results.</p>
-                            <div class="d-flex justify-content-center gap-2">
-                                <a href="https://github.com/simoneyc/ML_project/tree/main" class="btn btn-primary btn-custom" target="_blank">🔗</a>
-                                <a href="https://www.youtube.com/playlist?list=PLA49zAxbZWJ2yhNCu9BJUCsLmoQFHsLNl" class="btn btn-secondary btn-custom" target="_blank">▶️</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="col-md-4 mb-4">
-                    <div class="card shadow-lg">
-                        <img src="jpg/AIoT.gif" class="card-img-top" alt="Project Thumbnail">
-                        <div class="card-body">
-                            <h5 class="card-title">LINE Bot for Travel Recommendations - I am in Taichung</h5>
-                            <p class="card-text">A project designed to assist users in exploring Taichung's attractions, food, and snacks with LINE Bot integration and data scraping.</p>
-                            <div class="d-flex justify-content-center gap-2">
-                                <a href="https://github.com/simoneyc/AIoT_class/tree/main/project" class="btn btn-primary btn-custom" target="_blank">🔗</a>
-                                <a href="https://youtu.be/QoS5EMrfgTc?si=cnYOcN7f3mpohEn0" class="btn btn-secondary btn-custom" target="_blank">▶️</a>
-                            </div>
-                        </div>
-                    </div>
+            <div class="projects-heading">
+                <p class="section-kicker" data-en="SELECTED WORK" data-zh="精選作品">SELECTED WORK</p>
+                <h2 data-en="Projects" data-zh="專案作品">Projects</h2>
+                <p class="projects-intro" data-en="A selection of research and software projects where I turn technical ideas into practical systems." data-zh="精選研究與軟體開發作品，將技術想法轉化為可實際運作的系統。">
+                    A selection of research and software projects where I turn technical ideas into practical systems.
+                </p>
+            </div>
+
+            <article class="featured-project">
+                <div class="featured-project-media">
+                    <img src="jpg/yolo.gif" alt="Pedestrian safety detection system identifying road users" loading="lazy" decoding="async">
                 </div>
 
-                <div class="col-md-4 mb-4">
-                    <div class="card shadow-lg">
-                        <img src="jpg/running.gif" class="card-img-top" alt="Project Thumbnail">
-                        <div class="card-body">
-                            <h5 class="card-title">YTD</h5>
-                            <p class="card-text">A portable app for easy YouTube video downloads and audio conversion, usable on any computer without installation.</p>
-                            <div class="d-flex justify-content-center gap-2">
-                                <a href="https://github.com/simoneyc/YT_tool/tree/main/myYTD" class="btn btn-primary btn-custom" target="_blank">🔗</a>
-                                <a href="https://www.youtube.com/playlist?list=PLA49zAxbZWJ1ivp9Eh6XJTwfIOgOEm0X0" class="btn btn-secondary btn-custom" target="_blank">▶️</a>
-                            </div>
-                        </div>
+                <div class="featured-project-content">
+                    <div class="featured-project-meta">
+                        <span>2024</span>
+                        <span data-en="First Place" data-zh="專題競賽第一名">First Place</span>
                     </div>
-                </div>
 
-                <div class="col-md-4 mb-4">
-                    <div class="card shadow-lg">
-                        <img src="jpg/DB.jpg" class="card-img-top" alt="Project Thumbnail">
-                        <div class="card-body">
-                            <h5 class="card-title">IMDb Search Engine GUI</h5>
-                            <p class="card-text">This is the DB project with python its own GUI interface implement.</p>
-                            <a href="https://github.com/simoneyc/DB_project/tree/main/GUI_python" class="btn btn-primary btn-custom" target="_blank">🔗</a>
-                        </div>
-                    </div>
-                </div>
+                    <h3 data-en="Automatic Pedestrian Safety Detection System" data-zh="行人道路安全自動偵測系統">
+                        Automatic Pedestrian Safety Detection System
+                    </h3>
 
-                <div class="col-md-4 mb-4">
-                    <div class="card shadow-lg">
-                        <img src="jpg/Steganographic.jpg" class="card-img-top" alt="Project Thumbnail">
-                        <div class="card-body">
-                            <h5 class="card-title">Steganographic Techniques in Images</h5>
-                            <p class="card-text">A system for embedding and extracting secret messages in images with minimal visual distortion using custom encoding techniques.</p>
-                            <a href="https://github.com/simoneyc/Cryptography-Information_Security/tree/main" class="btn btn-primary btn-custom" target="_blank">🔗</a>
-                        </div>
+                    <p data-en="A computer vision system that combines YOLO, optical flow, image processing, and IoU analysis to identify vehicles that fail to yield to pedestrians and automatically send event notifications." data-zh="結合 YOLO、光流法、影像處理與 IoU 分析，自動辨識未禮讓行人的車輛，並發送事件通知的電腦視覺系統。">
+                        A computer vision system that combines YOLO, optical flow, image processing, and IoU analysis to identify vehicles that fail to yield to pedestrians and automatically send event notifications.
+                    </p>
+
+                    <ul class="project-tech" aria-label="Technologies used">
+                        <li>Python</li>
+                        <li>YOLO</li>
+                        <li>OpenCV</li>
+                        <li>Optical Flow</li>
+                        <li>IoU</li>
+                    </ul>
+
+                    <div class="featured-project-actions">
+                        <a class="project-button project-button-primary" href="https://www.youtube.com/playlist?list=PLA49zAxbZWJ1u609iHgwT64c6EU11yz8z" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-solid fa-play" aria-hidden="true"></i>
+                            <span data-en="Watch Demo" data-zh="觀看展示">Watch Demo</span>
+                        </a>
+                        <a class="project-button project-button-secondary" href="#paper">
+                            <i class="fa-regular fa-file-lines" aria-hidden="true"></i>
+                            <span data-en="View Research" data-zh="查看研究">View Research</span>
+                        </a>
                     </div>
                 </div>
+            </article>
+
+            <div class="web-projects-heading">
+                <div>
+                    <p class="section-kicker" data-en="LIVE ON THE WEB" data-zh="線上作品">LIVE ON THE WEB</p>
+                    <h3 data-en="Live Web Projects" data-zh="互動網站作品">Live Web Projects</h3>
+                </div>
+                <p data-en="Interactive projects you can open and try directly in your browser." data-zh="可以直接透過瀏覽器開啟並實際操作的互動作品。">
+                    Interactive projects you can open and try directly in your browser.
+                </p>
+            </div>
+
+            <div class="web-projects-grid">
+                <article class="web-project-card tarot-project">
+                    <div class="web-project-cover tarot-cover" aria-hidden="true">
+                        <div class="browser-bar">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="cover-symbol tarot-symbol">
+                            <i class="fa-solid fa-moon"></i>
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+                        <div class="cover-copy">
+                            <strong>AI TAROT</strong>
+                            <span>Interactive Reading</span>
+                        </div>
+                    </div>
+
+                    <div class="web-project-content">
+                        <div class="web-project-meta">
+                            <span data-en="AI Web Application" data-zh="AI 網頁應用">AI Web Application</span>
+                            <time datetime="2025">2025</time>
+                        </div>
+
+                        <h4 data-en="AI Tarot Reading" data-zh="AI 塔羅解牌網站">AI Tarot Reading</h4>
+                        <p data-en="An interactive tarot experience that simulates card drawing and orientations, then uses the Gemini API to generate personalized readings from the selected spread." data-zh="模擬塔羅牌洗牌、抽牌與正逆位結果，並串接 Gemini API，根據牌陣生成個人化解讀。">
+                            An interactive tarot experience that simulates card drawing and orientations, then uses the Gemini API to generate personalized readings from the selected spread.
+                        </p>
+
+                        <ul class="web-project-tech" aria-label="Technologies used">
+                            <li>JavaScript</li><li>Gemini API</li><li>REST API</li><li>Render</li><li>GitHub Pages</li>
+                        </ul>
+
+                        <div class="web-project-actions">
+                            <a class="web-live-button" href="https://simoneyc.github.io/Tarot_test/" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                                <span data-en="Try Reading" data-zh="開始抽牌">Try Reading</span>
+                            </a>
+                            <a class="web-code-button" href="https://github.com/simoneyc/Tarot_test" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="web-project-card typing-project">
+                    <div class="web-project-cover typing-cover" aria-hidden="true">
+                        <div class="browser-bar">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="cover-symbol typing-symbol">
+                            <i class="fa-regular fa-keyboard"></i>
+                            <span>72</span>
+                        </div>
+                        <div class="cover-copy">
+                            <strong>TYPING SPEED</strong>
+                            <span>Test Your Skills</span>
+                        </div>
+                    </div>
+
+                    <div class="web-project-content">
+                        <div class="web-project-meta">
+                            <span data-en="Web Game" data-zh="網頁遊戲">Web Game</span>
+                            <time datetime="2025">2025</time>
+                        </div>
+
+                        <h4 data-en="Typing Speed Game" data-zh="打字速度遊戲">Typing Speed Game</h4>
+                        <p data-en="An online typing game with multiple modes and difficulty levels, featuring real-time scoring, personal best records, and an online leaderboard." data-zh="支援不同模式與難度的線上打字遊戲，提供即時計分、個人最佳紀錄與線上排行榜。">
+                            An online typing game with multiple modes and difficulty levels, featuring real-time scoring, personal best records, and an online leaderboard.
+                        </p>
+
+                        <ul class="web-project-tech" aria-label="Technologies used">
+                            <li>JavaScript</li><li>Flask</li><li>SQLite</li><li>REST API</li><li>Render</li>
+                        </ul>
+
+                        <div class="web-project-actions">
+                            <a class="web-live-button" href="https://simoneyc.github.io/typing-game-online/frontend/" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-solid fa-play" aria-hidden="true"></i>
+                                <span data-en="Play Game" data-zh="開始遊戲">Play Game</span>
+                            </a>
+                            <a class="web-code-button" href="https://github.com/simoneyc/typing-game-online" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="other-projects-heading">
+                <h3 data-en="Other Projects" data-zh="其他專案">Other Projects</h3>
+                <span aria-hidden="true"></span>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-card-media">
+                        <img src="jpg/ML.gif" alt="Career change prediction application interface" loading="lazy" decoding="async">
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-meta">
+                            <p class="project-category" data-en="Machine Learning" data-zh="機器學習">Machine Learning</p>
+                            <time datetime="2024">2024</time>
+                        </div>
+                        <h4 data-en="Career Change Prediction App" data-zh="職涯轉換預測系統">Career Change Prediction App</h4>
+                        <p class="project-description" data-en="A web application that predicts career change likelihood from personal and industry factors and presents results through an accessible interface." data-zh="根據個人與產業因素預測職涯轉換可能性，並透過易用的網頁介面即時呈現結果。">
+                            A web application that predicts career change likelihood from personal and industry factors and presents results through an accessible interface.
+                        </p>
+                        <ul class="project-card-tech" aria-label="Technologies used">
+                            <li>Python</li><li>Flask</li><li>Scikit-learn</li><li>Pandas</li>
+                        </ul>
+                        <div class="project-card-actions">
+                            <a href="https://github.com/simoneyc/ML_project/tree/main" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i><span>GitHub</span></a>
+                            <a href="https://www.youtube.com/playlist?list=PLA49zAxbZWJ2yhNCu9BJUCsLmoQFHsLNl" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-play" aria-hidden="true"></i><span data-en="Video" data-zh="影片">Video</span></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-card-media">
+                        <img src="jpg/AIoT.gif" alt="LINE Bot travel recommendation conversation" loading="lazy" decoding="async">
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-meta">
+                            <p class="project-category">AIoT</p>
+                            <time datetime="2024">2024</time>
+                        </div>
+                        <h4 data-en="Taichung Travel LINE Bot" data-zh="台中旅遊推薦 LINE Bot">Taichung Travel LINE Bot</h4>
+                        <p class="project-description" data-en="A LINE Bot that helps users discover attractions, food, and local recommendations in Taichung using collected travel data." data-zh="運用蒐集的旅遊資料，協助使用者探索台中景點、美食與在地推薦的 LINE Bot。">
+                            A LINE Bot that helps users discover attractions, food, and local recommendations in Taichung using collected travel data.
+                        </p>
+                        <ul class="project-card-tech" aria-label="Technologies used">
+                            <li>Python</li><li>LINE Bot</li><li>Web Scraping</li><li>AIoT</li>
+                        </ul>
+                        <div class="project-card-actions">
+                            <a href="https://github.com/simoneyc/AIoT_class/tree/main/project" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i><span>GitHub</span></a>
+                            <a href="https://youtu.be/QoS5EMrfgTc?si=cnYOcN7f3mpohEn0" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-play" aria-hidden="true"></i><span data-en="Video" data-zh="影片">Video</span></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-card-media">
+                        <img src="jpg/running.gif" alt="YTD desktop application running" loading="lazy" decoding="async">
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-meta">
+                            <p class="project-category" data-en="Desktop Tool" data-zh="桌面工具">Desktop Tool</p>
+                            <time datetime="2024">2024</time>
+                        </div>
+                        <h4>YTD</h4>
+                        <p class="project-description" data-en="A portable desktop tool for downloading online videos and converting audio without requiring a separate installation." data-zh="免安裝即可使用的可攜式桌面工具，支援線上影片下載與音訊轉換。">
+                            A portable desktop tool for downloading online videos and converting audio without requiring a separate installation.
+                        </p>
+                        <ul class="project-card-tech" aria-label="Technologies used">
+                            <li>Python</li><li>Tkinter</li><li>GUI</li><li>Media Tool</li>
+                        </ul>
+                        <div class="project-card-actions">
+                            <a href="https://github.com/simoneyc/YT_tool/tree/main/myYTD" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i><span>GitHub</span></a>
+                            <a href="https://www.youtube.com/playlist?list=PLA49zAxbZWJ1ivp9Eh6XJTwfIOgOEm0X0" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-play" aria-hidden="true"></i><span data-en="Video" data-zh="影片">Video</span></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-card-media">
+                        <img src="jpg/DB.jpg" alt="IMDb search engine desktop interface" loading="lazy" decoding="async">
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-meta">
+                            <p class="project-category" data-en="Database Application" data-zh="資料庫應用">Database Application</p>
+                            <time datetime="2023">2023</time>
+                        </div>
+                        <h4 data-en="IMDb Search Engine GUI" data-zh="IMDb 搜尋引擎介面">IMDb Search Engine GUI</h4>
+                        <p class="project-description" data-en="A Python desktop interface for searching and exploring structured IMDb movie information through a database-backed application." data-zh="使用 Python 建立的桌面搜尋介面，透過資料庫查詢與瀏覽結構化的 IMDb 電影資訊。">
+                            A Python desktop interface for searching and exploring structured IMDb movie information through a database-backed application.
+                        </p>
+                        <ul class="project-card-tech" aria-label="Technologies used">
+                            <li>Python</li><li>GUI</li><li>Database</li>
+                        </ul>
+                        <div class="project-card-actions">
+                            <a href="https://github.com/simoneyc/DB_project/tree/main/GUI_python" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i><span>GitHub</span></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-card-media">
+                        <img src="jpg/Steganographic.jpg" alt="Image steganography demonstration" loading="lazy" decoding="async">
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-meta">
+                            <p class="project-category" data-en="Information Security" data-zh="資訊安全">Information Security</p>
+                            <time datetime="2024">2024</time>
+                        </div>
+                        <h4 data-en="Image Steganography" data-zh="影像隱寫技術">Image Steganography</h4>
+                        <p class="project-description" data-en="A system for embedding and extracting secret messages in images while minimizing visible distortion through custom encoding techniques." data-zh="透過自訂編碼技術在影像中嵌入與擷取秘密訊息，同時降低肉眼可見的影像失真。">
+                            A system for embedding and extracting secret messages in images while minimizing visible distortion through custom encoding techniques.
+                        </p>
+                        <ul class="project-card-tech" aria-label="Technologies used">
+                            <li>Python</li><li>Image Processing</li><li>Cryptography</li>
+                        </ul>
+                        <div class="project-card-actions">
+                            <a href="https://github.com/simoneyc/Cryptography-Information_Security/tree/main" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i><span>GitHub</span></a>
+                        </div>
+                    </div>
+                </article>
             </div>
         </section>
         
@@ -570,7 +749,7 @@
         </p>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="js/main.js?v=2"></script>
 
     </body>
 </html>
