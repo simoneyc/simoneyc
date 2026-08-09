@@ -274,64 +274,6 @@ body.menu-open {
     text-align: left;
 }
 
-.contact-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
-}
-
-.contact-icons a {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #00eaff;
-    text-decoration: none;
-    font-size: 2rem;
-    width: 50px;
-    height: 50px;
-    transition: 0.3s;
-    overflow: hidden;
-}
-
-.contact-icons a:hover {
-    color: #ff0099;
-    text-shadow: 0 0 5px #ff0099, 0 0 10px #ff00ff, 0 0 20px #ff0099;
-    transform: scale(1.2);
-}
-
-.particle-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 1px;
-    height: 1px;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-}
-
-.particle {
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    background: radial-gradient(circle, #ffcc00, transparent);
-    border-radius: 50%;
-    opacity: 1;
-    animation: sparkEffect 0.6s ease-out forwards;
-}
-
-@keyframes sparkEffect {
-    0% {
-        transform: translate(0, 0) scale(1);
-        opacity: 1;
-    }
-    100% {
-        transform: translate(var(--x), var(--y)) scale(0.5);
-        opacity: 0;
-    }
-}
-
 @keyframes glitch {
     0% { text-shadow: 2px 2px #ff0099; }
     50% { text-shadow: -2px -2px #00eaff; }

@@ -86,19 +86,6 @@
     transform: none;
 }
 
-.light-mode .contact-icons a {
-    color: #6f4e37;
-    text-shadow: none;
-    box-shadow: none;
-    transition: color 0.3s, transform 0.3s;
-}
-
-.light-mode .contact-icons a:hover {
-    color: #8b5a2b;
-    text-shadow: none;
-    transform: scale(1.1);
-}
-
 .light-mode footer {
     background: #e5d5b2;
     color: #5a4637;

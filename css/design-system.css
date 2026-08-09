@@ -244,20 +244,7 @@ a:hover {
     transform: none;
 }
 
-/* Contact and footer */
-.contact-icons a,
-.light-mode .contact-icons a {
-    color: var(--text-secondary);
-    text-shadow: none;
-}
-
-.contact-icons a:hover,
-.light-mode .contact-icons a:hover {
-    color: var(--accent);
-    text-shadow: none;
-    transform: translateY(-4px);
-}
-
+/* Footer */
 footer,
 .light-mode footer {
     border-top: 1px solid var(--border);

@@ -83,36 +83,6 @@ window.addEventListener("resize", function () {
 
         applyLanguage(localStorage.getItem("language") || "en");
 
-        document.querySelectorAll(".contact-icons a").forEach(icon => {
-            icon.addEventListener("mouseenter", function () {
-                let particleContainer = this.querySelector(".particle-container");
-
-                for (let i = 0; i < 15; i++) {
-                    let particle = document.createElement("div");
-                    particle.classList.add("particle");
-
-                    let size = Math.random() * 5 + 3;
-                    let angle = Math.random() * 2 * Math.PI;
-                    let speed = Math.random() * 30 + 10;
-                    let x = Math.cos(angle) * speed;
-                    let y = Math.sin(angle) * speed;
-                    let duration = Math.random() * 0.5 + 0.3;
-
-                    particle.style.width = `${size}px`;
-                    particle.style.height = `${size}px`;
-                    particle.style.setProperty("--x", `${x}px`);
-                    particle.style.setProperty("--y", `${y}px`);
-                    particle.style.animationDuration = `${duration}s`;
-
-                    particleContainer.appendChild(particle);
-
-                    setTimeout(() => {
-                        particle.remove();
-                    }, duration * 1000);
-                }
-            });
-        });
-
         document.addEventListener("DOMContentLoaded", function () {
             const text = "SimoneYC";
             const typingElement = document.getElementById("typing-text");
