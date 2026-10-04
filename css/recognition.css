@@ -1,0 +1,276 @@
+/* =====================================================
+   Awards and recognition
+   ===================================================== */
+
+.recognition-heading {
+    max-width: 720px;
+    margin: 0 auto 34px;
+    text-align: center;
+}
+
+.recognition-heading h2 {
+    margin: 8px 0 14px;
+    color: var(--text-primary);
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.recognition-heading > p:last-child {
+    margin: 0;
+    color: var(--text-muted);
+}
+
+.award-card {
+    position: relative;
+    display: grid;
+    overflow: hidden;
+    max-width: 900px;
+    margin: 0 auto;
+    border: 1px solid var(--border);
+    border-radius: 22px;
+    background:
+        radial-gradient(circle at 8% 20%, rgba(155, 140, 255, 0.14), transparent 30%),
+        var(--surface);
+    box-shadow: var(--shadow);
+    grid-template-columns: 180px minmax(0, 1fr);
+    text-align: left;
+    transition:
+        border-color 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.award-card:hover {
+    border-color: var(--accent-border);
+    box-shadow:
+        var(--shadow),
+        0 0 0 1px rgba(77, 216, 230, 0.06);
+    transform: translateY(-4px);
+}
+
+.award-emblem {
+    display: grid;
+    min-height: 100%;
+    border-right: 1px solid var(--border);
+    color: var(--secondary-accent);
+    background:
+        linear-gradient(145deg, rgba(77, 216, 230, 0.08), transparent 55%),
+        rgba(8, 12, 18, 0.18);
+    font-size: 3.4rem;
+    place-items: center;
+}
+
+.award-emblem i {
+    filter: drop-shadow(0 0 18px rgba(155, 140, 255, 0.35));
+}
+
+.award-content {
+    padding: clamp(28px, 5vw, 44px);
+}
+
+.award-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+    gap: 12px;
+}
+
+.award-meta span,
+.award-meta time {
+    padding: 6px 11px;
+    border: 1px solid var(--accent-border);
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 700;
+}
+
+.award-meta span {
+    color: var(--accent);
+    background: var(--accent-soft);
+}
+
+.award-meta time {
+    color: var(--text-muted);
+}
+
+.award-event {
+    margin: 0 0 10px;
+    color: var(--text-muted);
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.045em;
+    text-transform: uppercase;
+}
+
+.award-content h3 {
+    margin: 0;
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
+    line-height: 1.4;
+}
+
+.award-period {
+    margin: 14px 0 0;
+    color: var(--text-muted);
+    font-size: 0.86rem;
+}
+
+.award-actions {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 26px;
+    gap: 10px;
+}
+
+.award-actions a {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 14px;
+    border: 1px solid var(--accent-border);
+    border-radius: 10px;
+    gap: 8px;
+    color: var(--text-secondary);
+    background: var(--accent-soft);
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition:
+        border-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.award-actions a:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    transform: translateY(-2px);
+}
+
+.achievement-grid {
+    display: grid;
+    max-width: 900px;
+    margin: 20px auto 0;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.achievement-card {
+    position: relative;
+    overflow: hidden;
+    min-height: 250px;
+    padding: 28px;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    background:
+        linear-gradient(145deg, rgba(77, 216, 230, 0.07), transparent 50%),
+        var(--surface);
+    box-shadow: var(--shadow);
+    text-align: left;
+    transition:
+        border-color 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.achievement-card:hover {
+    border-color: var(--accent-border);
+    box-shadow:
+        var(--shadow),
+        0 0 0 1px rgba(77, 216, 230, 0.06);
+    transform: translateY(-4px);
+}
+
+.achievement-icon {
+    display: grid;
+    width: 46px;
+    height: 46px;
+    margin-bottom: 24px;
+    border: 1px solid var(--accent-border);
+    border-radius: 13px;
+    color: var(--accent);
+    background: var(--accent-soft);
+    font-size: 1.1rem;
+    place-items: center;
+}
+
+.achievement-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    gap: 12px;
+}
+
+.achievement-meta span {
+    color: var(--secondary-accent);
+    font-size: 0.76rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.achievement-meta time {
+    color: var(--text-muted);
+    font-size: 0.78rem;
+    font-weight: 700;
+}
+
+.achievement-card h3 {
+    margin: 0;
+    font-size: 1.12rem;
+    line-height: 1.5;
+}
+
+.achievement-card > p {
+    margin: 12px 0 0;
+    color: var(--text-muted);
+    font-size: 0.88rem;
+}
+
+@media (max-width: 700px) {
+    .award-card {
+        grid-template-columns: 1fr;
+    }
+
+    .award-emblem {
+        min-height: 130px;
+        border-right: 0;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .achievement-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .achievement-card {
+        min-height: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .award-meta {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .award-actions {
+        display: grid;
+    }
+
+    .award-actions a {
+        justify-content: center;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .award-card,
+    .achievement-card,
+    .award-actions a {
+        transition: none;
+    }
+
+    .award-card:hover,
+    .achievement-card:hover,
+    .award-actions a:hover {
+        transform: none;
+    }
+}
