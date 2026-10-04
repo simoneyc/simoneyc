@@ -43,8 +43,9 @@
     <link rel="stylesheet" href="css/design-system.css">
     <link rel="stylesheet" href="css/skills.css?v=2">
     <link rel="stylesheet" href="css/education.css">
+    <link rel="stylesheet" href="css/experience.css">
     <link rel="stylesheet" href="css/about-contact.css">
-    <link rel="stylesheet" href="css/projects.css?v=6">
+    <link rel="stylesheet" href="css/projects.css?v=7">
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
 
@@ -112,6 +113,7 @@
         <a href="#skills" data-en="Skills" data-zh="技能">Skills</a>
         <a href="#education" data-en="Education" data-zh="學歷">Education</a>
         <a href="#experience" data-en="Work Experience" data-zh="工作經驗">Work Experience</a>
+        <a href="#teaching" data-en="Academic Support" data-zh="學術支援">Academic Support</a>
         <a href="#competition" data-en="Competitions" data-zh="比賽經驗">Competitions</a>
         <a href="#projects" data-en="Projects" data-zh="專案">Projects</a>
         <a href="#paper" data-en="Research" data-zh="研究">Research</a>
@@ -504,11 +506,136 @@
         </section>
         
         <section id="experience" class="section fade-in">
-            <h2 data-en="💼 Work Experience" data-zh="💼 工作經驗">💼 Work Experience</h2>
-            <ul>
-                <li><strong data-en="AUO Corporation" data-zh="友達光電">AUO Corporation</strong> - <span data-en="Intern" data-zh="實習">Intern</span> (<span data-en="2023/07 - 2023/08" data-zh="2023/07 - 2023/08">2023/07 - 2023/08</span>)</li>
-                <p data-en="System Software Development" data-zh="系統平台開發">System Software Development</p>
-            </ul>
+            <div class="experience-heading">
+                <p class="section-kicker" data-en="PROFESSIONAL EXPERIENCE" data-zh="專業經歷">PROFESSIONAL EXPERIENCE</p>
+                <h2 data-en="Work Experience" data-zh="工作經驗">Work Experience</h2>
+                <p
+                    data-en="Building production-ready software through data engineering, automation, and cross-functional collaboration."
+                    data-zh="透過資料工程、自動化與跨團隊合作，將軟體實際導入生產環境。"
+                >
+                    Building production-ready software through data engineering,
+                    automation, and cross-functional collaboration.
+                </p>
+            </div>
+
+            <article class="experience-card">
+                <div class="experience-card-header">
+                    <div>
+                        <p class="experience-company" data-en="AUO Corporation" data-zh="友達光電">AUO Corporation</p>
+                        <h3 data-en="System Software Development Intern" data-zh="系統軟體開發實習生">System Software Development Intern</h3>
+                        <p class="experience-type" data-en="Project-based Internship" data-zh="專案式實習">Project-based Internship</p>
+                    </div>
+                    <span class="experience-period" data-en="Jul 2023 - Aug 2023" data-zh="2023 年 7 月 - 2023 年 8 月">Jul 2023 - Aug 2023</span>
+                </div>
+
+                <ul class="experience-achievements">
+                    <li
+                        data-en="Completed a project-based internship by developing and launching an automated production-equipment monitoring and anomaly-alert system with Python, SQL, and HTML, replacing periodic manual inspections with continuous monitoring."
+                        data-zh="以專案式實習完成自動化生產設備監控與異常預警系統，使用 Python、SQL 與 HTML 開發並正式上線，將定期人工巡檢轉為持續性監控。"
+                    >
+                        Completed a project-based internship by developing and launching an automated production-equipment monitoring and anomaly-alert system with Python, SQL, and HTML, replacing periodic manual inspections with continuous monitoring.
+                    </li>
+                    <li
+                        data-en="Built an end-to-end data pipeline for multi-source equipment time-series data, including ingestion, signal processing, mapping, validation, database writes, and configurable anomaly detection."
+                        data-zh="建立整合多來源設備時間序列資料的 end-to-end data pipeline，涵蓋擷取、訊號處理、映射、驗證、資料庫寫入與可調整的異常偵測邏輯。"
+                    >
+                        Built an end-to-end data pipeline for multi-source equipment time-series data, including ingestion, signal processing, mapping, validation, database writes, and configurable anomaly detection.
+                    </li>
+                    <li
+                        data-en="Integrated results with internal visualization and notification platforms, then used parameterized designs to deploy the system across multiple equipment configurations."
+                        data-zh="將監控結果整合至內部視覺化與自動通知平台，並透過參數化設計部署至多種設備配置，提升維護與擴充效率。"
+                    >
+                        Integrated results with internal visualization and notification platforms, then used parameterized designs to deploy the system across multiple equipment configurations.
+                    </li>
+                    <li
+                        data-en="Worked with process, manufacturing, and engineering teams on requirements, data validation, and system integration to deploy the solution in the production environment."
+                        data-zh="與製程、製造及工程團隊合作完成需求釐清、資料驗證與系統導入，將專案實際部署至生產環境。"
+                    >
+                        Worked with process, manufacturing, and engineering teams on requirements, data validation, and system integration to deploy the solution in the production environment.
+                    </li>
+                </ul>
+
+                <ul class="experience-tech" aria-label="Technologies used">
+                    <li>Python</li>
+                    <li>SQL</li>
+                    <li>HTML</li>
+                    <li>Data Pipeline</li>
+                    <li>Time-Series Processing</li>
+                    <li>Anomaly Detection</li>
+                    <li>Automation</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="teaching" class="section fade-in">
+            <div class="experience-heading">
+                <p class="section-kicker" data-en="ACADEMIC SERVICE" data-zh="學術服務">ACADEMIC SERVICE</p>
+                <h2 data-en="Academic Support Experience" data-zh="學術支援經驗">Academic Support Experience</h2>
+                <p
+                    data-en="Supporting course operations, student communication, capstone projects, and academic activities during my master's program."
+                    data-zh="碩士班期間協助課程運作、學生聯繫、專題執行與相關學術活動。"
+                >
+                    Supporting course operations, student communication, capstone projects, and academic activities during my master's program.
+                </p>
+            </div>
+
+            <div class="teaching-grid">
+                <article class="teaching-card">
+                    <span class="teaching-icon" aria-hidden="true"><i class="fa-solid fa-brain"></i></span>
+                    <p class="teaching-context" data-en="Course Support" data-zh="課程支援">Course Support</p>
+                    <h3 data-en="Artificial Intelligence and Medical Applications" data-zh="人工智慧與醫療應用">Artificial Intelligence and Medical Applications</h3>
+                </article>
+
+                <article class="teaching-card">
+                    <span class="teaching-icon" aria-hidden="true"><i class="fa-solid fa-laptop-code"></i></span>
+                    <p class="teaching-context" data-en="Project &amp; Competition Support" data-zh="專題與競賽支援">Project &amp; Competition Support</p>
+                    <h3 data-en="Capstone Project and Project Competition" data-zh="大學部專題與專題競賽">Capstone Project and Project Competition</h3>
+                </article>
+
+                <article class="teaching-card">
+                    <span class="teaching-icon" aria-hidden="true"><i class="fa-solid fa-user-graduate"></i></span>
+                    <p class="teaching-context" data-en="Program Support" data-zh="課程與班務支援">Program Support</p>
+                    <h3 data-en="In-Service Master's Program" data-zh="碩士在職專班">In-Service Master's Program</h3>
+                </article>
+            </div>
+
+            <div class="academic-support-details">
+                <div class="academic-support-title">
+                    <p data-en="Teaching Assistant" data-zh="助教">Teaching Assistant</p>
+                    <h3 data-en="Course and Academic Operations" data-zh="課程與學術活動運作">Course and Academic Operations</h3>
+                </div>
+
+                <ul class="academic-support-list">
+                    <li
+                        data-en="Supported assignment administration, course materials, classroom operations, attendance, and academic records."
+                        data-zh="協助作業管理、課程資料整理、課堂支援、出席紀錄與相關行政作業。"
+                    >
+                        Supported assignment administration, course materials, classroom operations, attendance, and academic records.
+                    </li>
+                    <li
+                        data-en="Coordinated student communication and assisted instructors with course information and day-to-day operations."
+                        data-zh="負責學生聯繫與資訊傳達，協助教師處理課程日常運作。"
+                    >
+                        Coordinated student communication and assisted instructors with course information and day-to-day operations.
+                    </li>
+                    <li
+                        data-en="Supported capstone project coordination, progress tracking, and project competition activities."
+                        data-zh="協助大學部專題協調、進度追蹤與專題競賽相關活動。"
+                    >
+                        Supported capstone project coordination, progress tracking, and project competition activities.
+                    </li>
+                </ul>
+
+                <ul class="academic-support-tags" aria-label="Academic support responsibilities">
+                    <li>Assignment Support</li>
+                    <li>Student Communication</li>
+                    <li>Material Organization</li>
+                    <li>Project Coordination</li>
+                    <li>Competition Support</li>
+                    <li>Classroom Support</li>
+                    <li>Attendance &amp; Records</li>
+                </ul>
+            </div>
         </section>
 
         <section id="competition" class="section fade-in">
