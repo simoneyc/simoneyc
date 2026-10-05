@@ -47,20 +47,35 @@
     transform: translateY(-4px);
 }
 
-.award-emblem {
+.certificate-media {
     display: grid;
+    width: 100%;
     min-height: 100%;
+    padding: 18px;
     border-right: 1px solid var(--border);
-    color: var(--secondary-accent);
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 0;
     background:
         linear-gradient(145deg, rgba(77, 216, 230, 0.08), transparent 55%),
         rgba(8, 12, 18, 0.18);
-    font-size: 3.4rem;
+    cursor: zoom-in;
     place-items: center;
 }
 
-.award-emblem i {
-    filter: drop-shadow(0 0 18px rgba(155, 140, 255, 0.35));
+.certificate-media img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-height: 260px;
+    border-radius: 9px;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+}
+
+.certificate-media:hover img,
+.certificate-media:focus-visible img {
+    transform: scale(1.025);
 }
 
 .award-content {
@@ -155,15 +170,17 @@
 
 .achievement-card {
     position: relative;
+    display: grid;
     overflow: hidden;
     min-height: 250px;
-    padding: 28px;
+    padding: 0;
     border: 1px solid var(--border);
     border-radius: 20px;
     background:
         linear-gradient(145deg, rgba(77, 216, 230, 0.07), transparent 50%),
         var(--surface);
     box-shadow: var(--shadow);
+    grid-template-columns: 130px minmax(0, 1fr);
     text-align: left;
     transition:
         border-color 0.25s ease,
@@ -179,17 +196,17 @@
     transform: translateY(-4px);
 }
 
-.achievement-icon {
-    display: grid;
-    width: 46px;
-    height: 46px;
-    margin-bottom: 24px;
-    border: 1px solid var(--accent-border);
-    border-radius: 13px;
-    color: var(--accent);
-    background: var(--accent-soft);
-    font-size: 1.1rem;
-    place-items: center;
+.certificate-media--compact {
+    padding: 14px;
+}
+
+.certificate-media--compact img {
+    max-height: 190px;
+}
+
+.achievement-content {
+    align-self: center;
+    padding: 28px;
 }
 
 .achievement-meta {
@@ -220,10 +237,55 @@
     line-height: 1.5;
 }
 
-.achievement-card > p {
+.achievement-content > p {
     margin: 12px 0 0;
     color: var(--text-muted);
     font-size: 0.88rem;
+}
+
+.certificate-lightbox {
+    position: fixed;
+    z-index: 2000;
+    display: grid;
+    padding: clamp(18px, 4vw, 48px);
+    background: rgba(3, 7, 12, 0.88);
+    cursor: zoom-out;
+    inset: 0;
+    place-items: center;
+    backdrop-filter: blur(8px);
+}
+
+body.certificate-open {
+    overflow: hidden;
+}
+
+.certificate-lightbox[hidden] {
+    display: none;
+}
+
+.certificate-lightbox img {
+    display: block;
+    max-width: min(92vw, 920px);
+    max-height: 90vh;
+    border-radius: 12px;
+    object-fit: contain;
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.5);
+    cursor: default;
+}
+
+.certificate-lightbox-close {
+    position: fixed;
+    top: 18px;
+    right: 18px;
+    display: grid;
+    width: 44px;
+    height: 44px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    color: #fff;
+    background: rgba(8, 12, 18, 0.72);
+    cursor: pointer;
+    place-items: center;
 }
 
 /* Research and publications */
@@ -379,10 +441,16 @@
         grid-template-columns: 1fr;
     }
 
-    .award-emblem {
-        min-height: 130px;
+    .certificate-media {
+        min-height: 0;
         border-right: 0;
         border-bottom: 1px solid var(--border);
+    }
+
+    .certificate-media img {
+        width: min(100%, 220px);
+        height: auto;
+        max-height: 280px;
     }
 
     .achievement-grid {
@@ -391,6 +459,12 @@
 
     .achievement-card {
         min-height: 0;
+        grid-template-columns: 120px minmax(0, 1fr);
+    }
+
+    .achievement-card .certificate-media {
+        border-right: 1px solid var(--border);
+        border-bottom: 0;
     }
 
     .publication-card {
@@ -432,6 +506,15 @@
         width: fit-content;
         margin-left: 0;
     }
+
+    .achievement-card {
+        grid-template-columns: 1fr;
+    }
+
+    .achievement-card .certificate-media {
+        border-right: 0;
+        border-bottom: 1px solid var(--border);
+    }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -439,7 +522,8 @@
     .achievement-card,
     .publication-card,
     .award-actions a,
-    .publication-actions a {
+    .publication-actions a,
+    .certificate-media img {
         transition: none;
     }
 
@@ -447,7 +531,9 @@
     .achievement-card:hover,
     .publication-card:hover,
     .award-actions a:hover,
-    .publication-actions a:hover {
+    .publication-actions a:hover,
+    .certificate-media:hover img,
+    .certificate-media:focus-visible img {
         transform: none;
     }
 }

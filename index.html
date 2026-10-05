@@ -44,7 +44,7 @@
     <link rel="stylesheet" href="css/skills.css?v=2">
     <link rel="stylesheet" href="css/education.css">
     <link rel="stylesheet" href="css/experience.css">
-    <link rel="stylesheet" href="css/recognition.css">
+    <link rel="stylesheet" href="css/recognition.css?v=2">
     <link rel="stylesheet" href="css/about-contact.css">
     <link rel="stylesheet" href="css/projects.css?v=7">
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
@@ -652,9 +652,9 @@
             </div>
 
             <article class="award-card">
-                <div class="award-emblem" aria-hidden="true">
-                    <i class="fa-solid fa-trophy"></i>
-                </div>
+                <button class="certificate-media" type="button" data-certificate-src="assets/certificates/project-first-place.jpg" data-certificate-alt="First-place project contest award certificate" aria-label="Enlarge first-place project contest award certificate">
+                    <img src="assets/certificates/project-first-place.jpg" alt="First-place project contest award certificate" loading="lazy" decoding="async">
+                </button>
 
                 <div class="award-content">
                     <div class="award-meta">
@@ -687,32 +687,37 @@
                             <span data-en="Watch Demo" data-zh="觀看展示">Watch Demo</span>
                         </a>
                     </div>
+
                 </div>
             </article>
 
             <div class="achievement-grid">
                 <article class="achievement-card">
-                    <div class="achievement-icon" aria-hidden="true">
-                        <i class="fa-solid fa-certificate"></i>
-                    </div>
+                    <button class="certificate-media certificate-media--compact" type="button" data-certificate-src="assets/certificates/go-2dan.jpg" data-certificate-alt="2nd Dan Go rank certificate" aria-label="Enlarge 2nd Dan Go rank certificate">
+                        <img src="assets/certificates/go-2dan.jpg" alt="2nd Dan Go rank certificate" loading="lazy" decoding="async">
+                    </button>
+                    <div class="achievement-content">
                     <div class="achievement-meta">
                         <span data-en="Certification" data-zh="能力認證">Certification</span>
                         <time datetime="2016">2016</time>
                     </div>
                     <h3 data-en="2nd Dan Go Rank Certification" data-zh="圍棋二段認證">2nd Dan Go Rank Certification</h3>
                     <p data-en="Weiqi Association of the R.O.C." data-zh="中華民國圍棋協會">Weiqi Association of the R.O.C.</p>
+                    </div>
                 </article>
 
                 <article class="achievement-card">
-                    <div class="achievement-icon" aria-hidden="true">
-                        <i class="fa-solid fa-atom"></i>
-                    </div>
+                    <button class="certificate-media certificate-media--compact" type="button" data-certificate-src="assets/certificates/general-physics.jpg" data-certificate-alt="General Physics Examination achievement certificate" aria-label="Enlarge General Physics Examination achievement certificate">
+                        <img src="assets/certificates/general-physics.jpg" alt="General Physics Examination achievement certificate" loading="lazy" decoding="async">
+                    </button>
+                    <div class="achievement-content">
                     <div class="achievement-meta">
                         <span data-en="Academic Achievement" data-zh="學業表現">Academic Achievement</span>
                         <time datetime="2021-12-13">2021</time>
                     </div>
                     <h3 data-en="Outstanding Performance in the Joint General Physics Examination" data-zh="110-1 聯合普通物理會考表現優異">Outstanding Performance in the Joint General Physics Examination</h3>
                     <p data-en="National Chung Hsing University" data-zh="國立中興大學">National Chung Hsing University</p>
+                    </div>
                 </article>
             </div>
         </section>
@@ -1151,6 +1156,13 @@
         
     </div>
 
+    <div class="certificate-lightbox" id="certificate-lightbox" role="dialog" aria-modal="true" aria-label="Certificate preview" hidden>
+        <button class="certificate-lightbox-close" type="button" aria-label="Close certificate preview">
+            <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+        </button>
+        <img src="" alt="">
+    </div>
+
     <footer>
         <p>
             &copy;
@@ -1165,7 +1177,7 @@
         </p>
     </footer>
 
-    <script src="js/main.js?v=3"></script>
+    <script src="js/main.js?v=4"></script>
 
     </body>
 </html>

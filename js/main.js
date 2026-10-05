@@ -38,6 +38,38 @@ document.addEventListener("keydown", event => {
     }
 });
 
+const certificateLightbox = document.getElementById("certificate-lightbox");
+const certificateLightboxImage = certificateLightbox?.querySelector("img");
+const certificateCloseButton = certificateLightbox?.querySelector(".certificate-lightbox-close");
+const certificateButtons = document.querySelectorAll("[data-certificate-src]");
+
+function closeCertificateLightbox() {
+    if (!certificateLightbox || certificateLightbox.hidden) return;
+
+    certificateLightbox.hidden = true;
+    certificateLightboxImage.src = "";
+    document.body.classList.remove("certificate-open");
+}
+
+certificateButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        certificateLightboxImage.src = button.dataset.certificateSrc;
+        certificateLightboxImage.alt = button.dataset.certificateAlt || "Certificate";
+        certificateLightbox.hidden = false;
+        document.body.classList.add("certificate-open");
+        certificateCloseButton.focus();
+    });
+});
+
+certificateCloseButton?.addEventListener("click", closeCertificateLightbox);
+certificateLightbox?.addEventListener("click", event => {
+    if (event.target === certificateLightbox) closeCertificateLightbox();
+});
+
+document.addEventListener("keydown", event => {
+    if (event.key === "Escape") closeCertificateLightbox();
+});
+
 window.addEventListener("resize", function () {
     if (window.innerWidth > 768) {
         closeMenu();
